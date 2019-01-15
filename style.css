@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/* font-family: 'Limelight', cursive;
+    font-family: 'Patua One', cursive;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.separator {
+  border: 1px solid white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  font-family: Patua One;
+}
+
+.sidenav a:hover {
+  color: #E00B27;
+}
+
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.main img {
+  height: 13vw;
+}
+
+.texte h1 {
+  font-size: 7vw;
+  font-weight: 100;
+  font-family: Patua One;
+  line-height: 100px;
+}
+
+.texte h2 {
+  font-size: 0.5em;
+  font-weight: 100;
+  font-family: Patua One;
+  color: #E00B27;
+}
+
+/* Carousel */
+
+.carousel {
+  display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  width: 80%;
+}
+
+.carousel img {
+  width: 90%;
+  height: 60vh;
+}
+
+.id {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 10px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+}
+
+/* La Programmation */
+
+.programmation {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 90%;
+  text-align: left;
+  grid-column-gap: 30px;
+}
+
+.programmation h1 {
+  font-size: 4vw;
+  font-family: Patua One;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.programmation p {
+  font-size: 1vw;
+  font-weight: 100;
+  padding-bottom: 5px;
+  font-family: Patua One;
+}
+
+.programmation-event {
+  margin-left: 100px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: left;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.programmation-event h1 {
+  font-size: 1vw;
+  font-family: Patua One;
+  padding-top: 0;
+  text-align: center;
+  color: #E00B27;
+}
+
+.programmation-event h2 {
+  font-size: 0.8vw;
+  font-family: Patua One;
+  padding-top: 0;
+  text-align: left;
+}
+
+.programmation-event img {
+  height: 200px;
+  box-shadow: 2px 2px 2px white;
+}
+
+/* Le Club */
+
+.club {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 70% 20%;
+  grid-column-gap: 30px;
+}
+
+.club h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  padding-top: 0;
+}
+
+.club p {
+  font-size: 1vw;
+  font-weight: 100;
+  font-family: Patua One;
+}
+
+.club .fb {
+  height: 40px;
+}
+
+.club .insta {
+  height: 50px;
+}
+
+.club .youtube {
+  height: 40px;
+}
+
+.abc {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  text-align: right;
+  grid-column-gap: 30px;
+}
+
+.abc h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  padding-top: 0;
+}
+
+.abc p {
+  font-size: 1vw;
+  font-weight: 100;
+  padding-bottom: 5px;
+  font-family: Patua One;
+}
+
+.abc .fb {
+  height: 40px;
+}
+
+.abcwebsite {
+  font-size: 15px;
+  font-family: Patua One;
+}
+
+/* La Carte Membre */
+
+.carte {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 90%;
+}
+
+.carte h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  margin-bottom: 40px;
+}
+
+.carte p {
+  font-size: 1.1vw;
+  font-weight: normal;
+  font-family: Patua One;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+/* Le Traiteur */
+
+.traiteur {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.traiteur h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  padding-top: 0;
+}
+
+.traiteur p {
+  font-size: 1.1vw;
+  font-weight: 100;
+  font-family: Patua One;
+}
+
+.traiteur-suite p {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 50px 20px 10px;
+  color: #fff;
+  font-size: 1.1vw;
+  font-weight: 100;
+  font-family: Patua One;
+  text-align: left;
+}
+
+/* Jobs */
+
+.jobs {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.jobs h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  padding-top: 0;
+}
+
+.jobs p {
+  font-size: 1.1vw;
+  font-weight: 100;
+  font-family: Patua One;
+}
+
+.jobs-suite {
+  margin-left: 170px;
+  margin-right: 10px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 30px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  border: 2px solid white;
+}
+
+.jobs-suite h1 {
+  font-size: 2vw;
+  font-family: Patua One;
+  padding-top: 0;
+  text-align: center;
+}
+
+.jobs-suite p, li{
+  font-size: 1vw;
+  font-weight: 100;
+  font-family: Patua One;
+}
+
+/* Contacts */
+
+.contact {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 90%;
+}
+
+.contact h1 {
+  font-size: 5vw;
+  font-family: Patua One;
+  margin-bottom: 40px;
+}
+
+.contact p {
+  font-size: 1.1vw;
+  font-weight: normal;
+  font-family: Patua One;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.contact img {
+  height: 100px;
+}
+
+.staff {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 20px 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.staff h1 {
+  font-size: 1.4vw;
+  font-family: Patua One;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.staff h2 {
+  font-size: 1vw;
+  font-family: Patua One;
+  padding-top: 0;
+  text-align: left;
+}
+
+.staff img {
+  height: 250px;
+  box-shadow: 2px 2px 2px white;
+}
